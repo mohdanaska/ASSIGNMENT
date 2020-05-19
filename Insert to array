@@ -1,0 +1,6 @@
+list=[2,4,5,7,8,4,8]
+n=int(input('enter the nth position'))
+n-=1
+e=int(input("enter the nth element"))
+list=list[:n]+[e]+list[n:]
+print('new list is',list)
