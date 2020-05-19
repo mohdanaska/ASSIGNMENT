@@ -1,0 +1,24 @@
+a=open('C:\\Users\\uae\\Desktop\\python\\tongue_twister.txt','w')
+a.write('Peter Piper picked a peck of pickled peppers \n')
+a.write('A peck of pickled peppers Peter Piper picked. \n')
+a.write('If Peter Piper picked a peck of pickled peppers \n')
+a.write('Where\'s the peck of pickled peppers Peter piper picked.')
+a=open('C:\\Users\\uae\\Desktop\\python\\tongue_twister.txt','r')
+b=a.read()
+list=b.split()
+
+c=[]
+
+for i in list:
+    x=0
+    if i in c:
+        continue
+    for j in list:
+        if i==j:
+            x+=1
+        if i not in c:
+            c.append(i)
+
+    print(i,':',x)
+
+a.close()
